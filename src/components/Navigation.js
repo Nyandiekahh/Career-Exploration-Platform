@@ -10,7 +10,7 @@ const Navigation = ({ language = 'en', onLanguageChange }) => {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const location = useLocation();
   
-  const t = languages[language];
+  const t = languages[language] || languages.en;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,11 +21,11 @@ const Navigation = ({ language = 'en', onLanguageChange }) => {
   }, []);
 
   const navItems = [
-    { name: t?.home || 'Home', path: '/' },
-    { name: t?.howItWorks || 'How It Works', path: '/how-it-works' },
-    { name: t?.exploreCareers || 'Explore Careers', path: '/explore-careers' },
-    { name: t?.blog || 'Blog', path: '/blog' },
-    { name: t?.faq || 'FAQ', path: '/faq' },
+    { name: 'Home', path: '/' },
+    { name: 'How It Works', path: '/how-it-works' },
+    { name: 'Explore Careers', path: '/explore-careers' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'FAQ', path: '/faq' },
   ];
 
   const navStyle = {
@@ -103,7 +103,7 @@ const Navigation = ({ language = 'en', onLanguageChange }) => {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
               <motion.div
-                key={item.name}
+                key={`${item.name}-${index}`}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -117,7 +117,7 @@ const Navigation = ({ language = 'en', onLanguageChange }) => {
                       : "text-gray-700 hover:text-primary-600"
                   )}
                 >
-                  {item.name}
+                  {String(item.name)}
                   <span className={cn(
                     "absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary-600 to-secondary-600 transition-all duration-300",
                     location.pathname === item.path ? "w-full" : "w-0 group-hover:w-full"
@@ -283,9 +283,9 @@ const Navigation = ({ language = 'en', onLanguageChange }) => {
             className="md:hidden"
           >
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <Link
-                  key={item.name}
+                  key={`mobile-${item.name}-${index}`}
                   to={item.path}
                   className={cn(
                     "font-medium transition-colors duration-200 py-2 block",
@@ -295,7 +295,7 @@ const Navigation = ({ language = 'en', onLanguageChange }) => {
                   )}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {item.name}
+                  {String(item.name)}
                 </Link>
               ))}
               <div style={{

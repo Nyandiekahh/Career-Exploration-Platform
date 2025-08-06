@@ -16,11 +16,17 @@ export const languages = {
     faq: 'FAQ',
     login: 'Log In',
     signUp: 'Sign Up',
+    bookSession: 'Book Session',
     hero: {
       title: 'Transform Your Career Journey',
       subtitle: 'Get personalized career guidance from AI-powered coaches and industry experts',
       cta: 'Start Your Journey',
-      secondaryCta: 'Learn More'
+      secondaryCta: 'Learn More',
+      watchDemo: 'Watch Demo'
+    },
+    experts: {
+      title: 'Meet Our Expert Coaches',
+      subtitle: 'Connect with industry leaders who have walked the path you want to take'
     },
     howItWorks: {
       title: 'How It Works',
@@ -71,6 +77,14 @@ export const languages = {
     blog: {
       title: 'Career Blog',
       subtitle: 'Latest insights, tips, and trends to help you navigate your career journey',
+      readMore: 'Read More',
+      categories: {
+        all: 'All',
+        careerTips: 'Career Tips',
+        industryNews: 'Industry News',
+        interviews: 'Interviews',
+        resources: 'Resources'
+      },
       posts: [
         {
           title: 'Career Development Tips for 2025',
@@ -82,6 +96,12 @@ export const languages = {
     faq: {
       title: 'Frequently Asked Questions',
       subtitle: 'Find answers to common questions about CareerCoach and our services',
+      categories: {
+        general: 'General',
+        booking: 'Booking',
+        payment: 'Payment',
+        technical: 'Technical'
+      },
       questions: [
         {
           question: 'How does CareerCoach work?',
@@ -104,6 +124,18 @@ export const languages = {
     features: {
       title: 'Why Choose CareerCoach?',
       subtitle: 'Everything you need to accelerate your career growth',
+      expert: {
+        title: 'Expert Coaching',
+        description: 'Get personalized guidance from industry professionals and career specialists'
+      },
+      flexible: {
+        title: 'Flexible Scheduling',
+        description: 'Book sessions that fit your schedule with 24/7 availability'
+      },
+      personalized: {
+        title: 'Personalized Approach',
+        description: 'Comprehensive evaluation of your strengths and areas for growth'
+      },
       items: [
         {
           title: 'AI-Powered Matching',
@@ -132,11 +164,17 @@ export const languages = {
     faq: 'FAQ',
     login: 'Entrar',
     signUp: 'Cadastrar',
+    bookSession: 'Reservar Sessão',
     hero: {
       title: 'Transforme Sua Jornada Profissional',
       subtitle: 'Receba orientação personalizada de coaches com IA e especialistas da indústria',
       cta: 'Comece Sua Jornada',
-      secondaryCta: 'Saiba Mais'
+      secondaryCta: 'Saiba Mais',
+      watchDemo: 'Ver Demo'
+    },
+    experts: {
+      title: 'Conheça Nossos Coaches Especialistas',
+      subtitle: 'Conecte-se com líderes da indústria que percorreram o caminho que você quer seguir'
     },
     howItWorks: {
       title: 'Como Funciona',
@@ -187,6 +225,14 @@ export const languages = {
     blog: {
       title: 'Blog de Carreira',
       subtitle: 'Últimas percepções, dicas e tendências para ajudá-lo a navegar em sua jornada profissional',
+      readMore: 'Leia Mais',
+      categories: {
+        all: 'Todos',
+        careerTips: 'Dicas de Carreira',
+        industryNews: 'Notícias da Indústria',
+        interviews: 'Entrevistas',
+        resources: 'Recursos'
+      },
       posts: [
         {
           title: 'Dicas de Desenvolvimento de Carreira para 2025',
@@ -198,6 +244,12 @@ export const languages = {
     faq: {
       title: 'Perguntas Frequentes',
       subtitle: 'Encontre respostas para perguntas comuns sobre o CareerCoach e nossos serviços',
+      categories: {
+        general: 'Geral',
+        booking: 'Reserva',
+        payment: 'Pagamento',
+        technical: 'Técnico'
+      },
       questions: [
         {
           question: 'Como funciona o CareerCoach?',
@@ -220,6 +272,18 @@ export const languages = {
     features: {
       title: 'Por Que Escolher o CareerCoach?',
       subtitle: 'Tudo que você precisa para acelerar seu crescimento profissional',
+      expert: {
+        title: 'Coaching Especializado',
+        description: 'Receba orientação personalizada de profissionais da indústria e especialistas em carreira'
+      },
+      flexible: {
+        title: 'Horário Flexível',
+        description: 'Reserve sessões que se adequam ao seu horário com disponibilidade 24/7'
+      },
+      personalized: {
+        title: 'Abordagem Personalizada',
+        description: 'Avaliação abrangente de seus pontos fortes e áreas de crescimento'
+      },
       items: [
         {
           title: 'Correspondência por IA',
